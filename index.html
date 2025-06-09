@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complex Vanilla - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #d4a5ff;
+      --secondary: #3a3a3a;
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #ffffff;
+      --accent: #bb86fc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('header-bg.gif') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      background-color: var(--accent);
+      color: var(--bg);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e0b3ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #1b1b1b;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    small {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Complex Vanilla</h1>
+    <p>IP: hub.mc-complex.com • Bedrock: 19132</p>
+    <a href="/vote.html" class="btn">Vote Now</a>
+  </header>
+
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/forums">Forums</a>
+    <a href="/vote.html">Vote</a>
+    <a href="https://discord.gg/complex">Discord</a>
+    <a href="/store">Store</a>
+  </nav>
+
+  <div class="section">
+    <h2>Latest News</h2>
+    <div class="card">
+      <h3>Complex Vanilla Launch</h3>
+      <p>We are excited to announce the launch of our new Vanilla server. Come join the community and enjoy a pure Minecraft experience!</p>
+      <small>Posted by Hazzaaa - Jan 12, 2020</small>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Quick Links</h2>
+    <div class="grid">
+      <div class="card"><a href="/forums/applications" class="btn">Staff Applications</a></div>
+      <div class="card"><a href="/forums/appeals" class="btn">Ban Appeals</a></div>
+      <div class="card"><a href="https://discord.gg/complex" class="btn">Join Discord</a></div>
+      <div class="card"><a href="/store" class="btn">Visit the Store</a></div>
+    </div>
+  </div>
+</body>
+</html>

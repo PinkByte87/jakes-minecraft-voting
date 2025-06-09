@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vote Leaderboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #d4a5ff;
+      --secondary: #3a3a3a;
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #ffffff;
+      --accent: #bb86fc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      text-align: center;
+      color: var(--primary);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    table {
+      width: 90%;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background-color: #2a2a2a;
+      color: var(--primary);
+    }
+
+    tr:hover {
+      background-color: #2b2b2b;
+    }
+
+    .rank {
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Voters Leaderboard</h1>
+  </header>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Username</th>
+        <th>Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="rank">1</td><td>PlayerOne</td><td>152</td></tr>
+      <tr><td class="rank">2</td><td>SteveCraft</td><td>145</td></tr>
+      <tr><td class="rank">3</td><td>EnderWiz</td><td>140</td></tr>
+      <tr><td>4</td><td>MinerMax</td><td>132</td></tr>
+      <tr><td>5</td><td>RedstonePro</td><td>129</td></tr>
+    </tbody>
+  </table>
+  <div class="footer">
+    Updated every hour • Votes reset monthly
+  </div>
+</body>
+</html>
